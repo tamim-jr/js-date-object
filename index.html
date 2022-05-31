@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date in Js</title>
+    <style>
+        .container{
+            text-align: center;
+            margin: 5px 45px;
+            background-color: aliceblue;
+        }
+        .cdate{
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>This is an example of Date and Time</h1>
+    <p id="fixed-date"></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint eum et alias deserunt. Tempore distinctio animi itaque officia sequi repellendus, deserunt odit praesentium maxime, eum molestias saepe velit. Ad quaerat impedit aut quis ipsam sequi iusto id ducimus, provident dicta in voluptatum alias a? Facilis.</p>
+    <button type="button" onclick="document.getElementById('current-date').innerHTML = Date()">Click me to display Date and Time</button>
+    <p id="current-date" class="cdate"></p>
+    <script>
+        //js count month for 0
+        const d = new Date( 2022, 5, 1, 12, 10);
+        document.getElementById("fixed-date").innerHTML = "This article was written: " + d;
+    </script>
+</div>
+</body>
+</html>
